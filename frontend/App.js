@@ -9,7 +9,7 @@ import { useDarkMode } from "./hooks/useDarkMode";
 const App = () => {
   const [coinData, setCoinData] = useState([]);
   // const [darkMode, setDarkMode] = useState(true);
-  const [darkMode, setDarkMode] = useDarkMode(true);
+  const [darkMode, setDarkMode] = useDarkMode("dark-mode", false);
 
   useEffect(() => {
     axios
